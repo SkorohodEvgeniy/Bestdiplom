@@ -1,0 +1,41 @@
+<svg width="1920" height="1428" viewBox="0 0 1920 1428" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="0.00170898" width="1920" height="1427" fill="url(#paint0_linear_47_4129)"/>
+<circle cx="242.5" cy="1140.5" r="41.5" stroke="#EFF1CC" stroke-width="2"/>
+<g opacity="0.2">
+<circle cx="189.5" cy="732.5" r="67" stroke="#00AE9A" stroke-width="5"/>
+<circle cx="189.5" cy="732.5" r="55.295" stroke="#00AE9A" stroke-width="2"/>
+</g>
+<circle cx="1819.5" cy="417.5" r="67" stroke="#EFF1CC" stroke-width="5"/>
+<circle cx="1819.5" cy="417.5" r="55.295" stroke="#EFF1CC" stroke-width="2"/>
+<rect x="61.8389" y="499.303" width="20" height="5" transform="rotate(45 61.8389 499.303)" fill="#00AE9A"/>
+<rect x="75.981" y="502.839" width="20" height="5" transform="rotate(135 75.981 502.839)" fill="#00AE9A"/>
+<rect x="166" y="950" width="19" height="5" fill="#EFF1CC"/>
+<rect x="178" y="943" width="19" height="5" transform="rotate(90 178 943)" fill="#EFF1CC"/>
+<path d="M1.21972e-05 1427L9.79746e-06 1341.28L1.06656e-05 1183C128.1 1183 118.834 1270.66 210.277 1314.21C280.617 1347.71 309.372 1330.97 397.592 1354.82C485.811 1378.66 474.532 1427 474.532 1427L1.21972e-05 1427Z" fill="#EEF0F3"/>
+<circle opacity="0.2" cx="93.5" cy="1288.5" r="47.5" stroke="#00AE9A" stroke-width="2"/>
+<rect x="1775.84" y="853.306" width="20" height="5" transform="rotate(45 1775.84 853.306)" fill="#00AE9A"/>
+<rect x="1789.98" y="856.841" width="20" height="5" transform="rotate(135 1789.98 856.841)" fill="#00AE9A"/>
+<rect x="145.839" y="322.305" width="20" height="5" transform="rotate(45 145.839 322.305)" fill="#00AE9A"/>
+<rect x="159.981" y="325.841" width="20" height="5" transform="rotate(135 159.981 325.841)" fill="#00AE9A"/>
+<circle opacity="0.2" cx="1768.5" cy="1249.5" r="47.5" stroke="#00AE9A" stroke-width="2"/>
+<circle opacity="0.2" cx="1657" cy="573.002" r="41" stroke="#00AE9A" stroke-width="2"/>
+<circle opacity="0.2" cx="1708" cy="142" r="41" stroke="#00AE9A" stroke-width="2"/>
+<rect x="1675" y="1048" width="19" height="5" fill="#EFF1CC"/>
+<rect x="1687" y="1041" width="19" height="5" transform="rotate(90 1687 1041)" fill="#EFF1CC"/>
+<rect x="1772.7" y="1220.3" width="20" height="5" transform="rotate(45 1772.7 1220.3)" fill="#EFF1CC"/>
+<rect x="1786.84" y="1223.84" width="20" height="5" transform="rotate(135 1786.84 1223.84)" fill="#EFF1CC"/>
+<rect x="268.839" y="1368.3" width="20" height="5" transform="rotate(45 268.839 1368.3)" fill="#00AE9A"/>
+<rect x="282.981" y="1371.84" width="20" height="5" transform="rotate(135 282.981 1371.84)" fill="#00AE9A"/>
+<circle cx="150.5" cy="330.5" r="67" stroke="#EFF1CC" stroke-width="5"/>
+<circle cx="150.5" cy="330.5" r="55.295" stroke="#EFF1CC" stroke-width="2"/>
+<rect x="1031" y="27" width="19" height="5" fill="#EFF1CC"/>
+<rect x="1043" y="20" width="19" height="5" transform="rotate(90 1043 20)" fill="#EFF1CC"/>
+<rect x="242" y="69" width="19" height="5" fill="#00AE9A"/>
+<rect x="254" y="62" width="19" height="5" transform="rotate(90 254 62)" fill="#00AE9A"/>
+<defs>
+<linearGradient id="paint0_linear_47_4129" x1="960" y1="0.00170898" x2="960" y2="1427" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FAFBFC" stop-opacity="0"/>
+<stop offset="1" stop-color="#FAFBFC"/>
+</linearGradient>
+</defs>
+</svg>

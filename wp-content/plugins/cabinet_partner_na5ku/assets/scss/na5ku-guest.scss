@@ -1,0 +1,94 @@
+@import "inc/index";
+
+.modal.fade.in {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.calculation-range,
+.calculation-range-uniq {
+    background: linear-gradient(to right, var(--na5ku-buttons-bg) 0%, #f3f3f3 0%);
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    outline: none !important;
+    border: 0 !important;
+
+    &::-moz-range-thumb,
+    &::-ms-thumb,
+    &::-webkit-slider-thumb {
+        box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+    }
+
+    @include reset-button;
+}
+
+.calculation-range-container,
+.calculation-range-uniq-container {
+    .calculation-range,
+    .calculation-range-uniq {
+
+        width: 100%;
+        height: 5px;
+        margin-bottom: 10px;
+        padding: 0;
+        cursor: pointer;
+        background: linear-gradient(to right, var(--na5ku-buttons-bg) 0%, $c-grey 0%);
+        color: transparent;
+        border-color: transparent;
+
+        &::-webkit-slider-thumb {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            -webkit-appearance: none;
+            cursor: ew-resize;
+            background-color: $c-white;
+            box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+        }
+
+        &::-moz-range-thumb {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            -webkit-appearance: none;
+            cursor: ew-resize;
+            background-color: $c-white;
+            box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+        }
+
+        &::-ms-thumb {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            -webkit-appearance: none;
+            cursor: ew-resize;
+            background-color: $c-white;
+            box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+        }
+
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+    }
+
+
+    .range-info {
+        color: #414141;
+        font-size: 16px;
+        font-weight: bold;
+
+        .range-result {
+            color: var(--na5ku-buttons-bg);
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+/* line 3, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.modal.fade.in {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+}
+
+/* line 12, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range,
+.calculation-range-uniq {
+  background: linear-gradient(to right, var(--na5ku-buttons-bg) 0%, #f3f3f3 0%);
+  width: 100%;
+  height: 20px;
+  -webkit-appearance: none;
+  outline: none !important;
+  border: 0 !important;
+  border: none;
+  outline: none;
+}
+
+/* line 21, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range::-moz-range-thumb, .calculation-range::-ms-thumb, .calculation-range::-webkit-slider-thumb,
+.calculation-range-uniq::-moz-range-thumb,
+.calculation-range-uniq::-ms-thumb,
+.calculation-range-uniq::-webkit-slider-thumb {
+  box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+}
+
+/* line 32, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .calculation-range,
+.calculation-range-container .calculation-range-uniq,
+.calculation-range-uniq-container .calculation-range,
+.calculation-range-uniq-container .calculation-range-uniq {
+  width: 100%;
+  height: 5px;
+  margin-bottom: 10px;
+  padding: 0;
+  cursor: pointer;
+  background: linear-gradient(to right, var(--na5ku-buttons-bg) 0%, #f3f3f3 0%);
+  color: transparent;
+  border-color: transparent;
+}
+
+/* line 44, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .calculation-range::-webkit-slider-thumb,
+.calculation-range-container .calculation-range-uniq::-webkit-slider-thumb,
+.calculation-range-uniq-container .calculation-range::-webkit-slider-thumb,
+.calculation-range-uniq-container .calculation-range-uniq::-webkit-slider-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background-color: #fff;
+  box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+}
+
+/* line 54, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .calculation-range::-moz-range-thumb,
+.calculation-range-container .calculation-range-uniq::-moz-range-thumb,
+.calculation-range-uniq-container .calculation-range::-moz-range-thumb,
+.calculation-range-uniq-container .calculation-range-uniq::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background-color: #fff;
+  box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+}
+
+/* line 64, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .calculation-range::-ms-thumb,
+.calculation-range-container .calculation-range-uniq::-ms-thumb,
+.calculation-range-uniq-container .calculation-range::-ms-thumb,
+.calculation-range-uniq-container .calculation-range-uniq::-ms-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background-color: #fff;
+  box-shadow: 0 0 0px 5px var(--na5ku-buttons-bg);
+}
+
+/* line 74, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .calculation-range::-webkit-slider-runnable-track,
+.calculation-range-container .calculation-range-uniq::-webkit-slider-runnable-track,
+.calculation-range-uniq-container .calculation-range::-webkit-slider-runnable-track,
+.calculation-range-uniq-container .calculation-range-uniq::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* line 83, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .range-info,
+.calculation-range-uniq-container .range-info {
+  color: #414141;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 88, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/na5ku-guest.scss */
+.calculation-range-container .range-info .range-result,
+.calculation-range-uniq-container .range-info .range-result {
+  color: var(--na5ku-buttons-bg);
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=na5ku-guest.css.map */

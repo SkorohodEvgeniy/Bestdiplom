@@ -1,0 +1,26 @@
+<svg width="1924" height="707" viewBox="0 0 1924 707" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1807_268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="707">
+<rect width="1920" height="707" fill="white"/>
+</mask>
+<g mask="url(#mask0_1807_268)">
+<g opacity="0.5">
+<circle cx="131.5" cy="219.5" r="67" stroke="#EFF1CC" stroke-width="5"/>
+<circle cx="131.5" cy="219.5" r="55.295" stroke="#EFF1CC" stroke-width="2"/>
+</g>
+<path opacity="0.3" d="M2142.79 533.166C2158.47 362.892 2089.74 137.132 1939.91 123.332C1790.07 109.531 1601.4 192.931 1585.71 363.204C1575.01 479.412 1709.82 527.268 1859.65 541.069C2009.48 554.87 2127.11 703.439 2142.79 533.166Z" fill="#EFF1CC"/>
+<circle opacity="0.2" cx="630.5" cy="111.5" r="47.5" stroke="#00AE9A" stroke-width="2"/>
+<circle opacity="0.2" cx="1731.5" cy="546.5" r="47.5" stroke="#00AE9A" stroke-width="2"/>
+<rect x="1561.84" y="84.3032" width="20" height="5" transform="rotate(45 1561.84 84.3032)" fill="#00AE9A"/>
+<rect x="1575.98" y="87.8389" width="20" height="5" transform="rotate(135 1575.98 87.8389)" fill="#00AE9A"/>
+<rect x="215.839" y="482.303" width="20" height="5" transform="rotate(45 215.839 482.303)" fill="#00AE9A"/>
+<rect x="229.981" y="485.839" width="20" height="5" transform="rotate(135 229.981 485.839)" fill="#00AE9A"/>
+<rect x="1813.84" y="287.303" width="20" height="5" transform="rotate(45 1813.84 287.303)" fill="#00AE9A"/>
+<rect x="1827.98" y="290.839" width="20" height="5" transform="rotate(135 1827.98 290.839)" fill="#00AE9A"/>
+<rect x="488" y="76" width="19" height="5" fill="#EFF1CC"/>
+<rect x="500" y="69" width="19" height="5" transform="rotate(90 500 69)" fill="#EFF1CC"/>
+<rect x="568.839" y="670.303" width="20" height="5" transform="rotate(45 568.839 670.303)" fill="#EFF1CC"/>
+<rect x="582.981" y="673.839" width="20" height="5" transform="rotate(135 582.981 673.839)" fill="#EFF1CC"/>
+<rect x="237" y="110" width="19" height="5" fill="#00AE9A"/>
+<rect x="249" y="103" width="19" height="5" transform="rotate(90 249 103)" fill="#00AE9A"/>
+</g>
+</svg>

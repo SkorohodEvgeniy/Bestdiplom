@@ -1,0 +1,29 @@
+<table border="0" style="background:#eee; color:#333; border:solid 1px #000000;">
+  <tr>
+    <td colspan="2"><strong>na5ku.com.ua - заказать работу</strong></td>
+  </tr>
+  <tr>
+    <td>%%name.title%%</td>
+    <td>%%name.value%%</td>
+  </tr>
+  <tr>
+    <td>%%e_mail.title%%</td>
+    <td>%%e_mail.value%%</td>
+  </tr>
+  <tr>
+    <td>%%tell.title%%</td>
+    <td>%%tell.value%%</td>
+  </tr>
+  <tr>
+    <td>%%name_work.title%%</td>
+    <td>%%name_work.value%%</td>
+  </tr>
+  <tr>
+    <td>%%date_work.title%%</td>
+    <td>%%date_work.value%%</td>
+  </tr>
+  <tr>
+    <td>%%filesend.title%%</td>
+    <td>%%filesend.value%%</td>
+  </tr>
+</table>

@@ -1,0 +1,13 @@
+<svg width="10" height="39" viewBox="0 0 10 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="5" cy="23.0005" rx="3" ry="3" transform="rotate(90 5 23.0005)" fill="#D3D3D5"/>
+<ellipse cx="5" cy="13.0005" rx="3" ry="3" transform="rotate(90 5 13.0005)" fill="#D3D3D5"/>
+<ellipse cx="5" cy="3.00049" rx="3" ry="3" transform="rotate(90 5 3.00049)" fill="#D3D3D5"/>
+<g clip-path="url(#clip0_40_1368)">
+<path d="M5.92859 37.2023L9.73125 31.6477C9.90699 31.3912 10 31.1327 10 30.9179C10 30.5025 9.66666 30.2456 9.10869 30.2456L0.890017 30.2456C0.332694 30.2456 -1.12165e-08 30.5022 -2.93292e-08 30.9166C-3.8734e-08 31.1317 0.09309 31.3861 0.269312 31.6432L4.0719 37.2004C4.31684 37.5577 4.64646 37.7557 5.00045 37.7557C5.35419 37.7557 5.68372 37.5601 5.92859 37.2023Z" fill="#D3D3D5"/>
+</g>
+<defs>
+<clipPath id="clip0_40_1368">
+<rect width="10" height="10" fill="white" transform="translate(10 29.0005) rotate(90)"/>
+</clipPath>
+</defs>
+</svg>

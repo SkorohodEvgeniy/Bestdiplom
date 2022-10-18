@@ -1,0 +1,188 @@
+# BEGIN Cabinet
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^cabinet/forgot-password/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/forgot-password/index.php [L,QSA]
+RewriteRule ^cabinet/forgot-password/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/forgot-password/index.php [L,QSA]
+#RewriteRule ^ups/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/ups/$1 [L,QSA]
+#RewriteRule ^ups/((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/ups/$1  [L,QSA]
+RewriteRule ^cabinet/assets/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/assets/$1 [L,QSA]
+RewriteRule ^cabinet/img/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/img/$1 [L,QSA]
+RewriteRule ^cabinet/files/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/files/$1 [L,QSA]
+RewriteRule ^cabinet/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=main [L,QSA]
+RewriteRule ^cabinet/action/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=load&method=json&a2=$1 [L,QSA]
+RewriteRule ^cabinet/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=main [L,QSA]
+RewriteRule ^cabinet/forgot-password/index.php?$ wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/forgot-password/index.php/ [L,QSA]
+RewriteRule ^cabinet/profile.get?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=profile [L,QSA]
+RewriteRule ^cabinet/profile.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=profile&a2=save [L,QSA]
+RewriteRule ^cabinet/pm/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=pm [L,QSA]
+RewriteRule ^cabinet/pm/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=pm [L,QSA]
+RewriteRule ^cabinet/earn/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=friends [L,QSA]
+RewriteRule ^cabinet/earn/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=friends [L,QSA]
+RewriteRule ^cabinet/faq/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=faq [L,QSA]
+RewriteRule ^cabinet/faq/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=faq [L,QSA]
+RewriteRule ^cabinet/examples/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=examples [L,QSA]
+RewriteRule ^cabinet/examples/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=examples [L,QSA]
+RewriteRule ^cabinet/discount/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=discount [L,QSA]
+RewriteRule ^cabinet/discount/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=discount [L,QSA]
+RewriteRule ^cabinet/open/((.*[^/])+)[/.*]?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_zakaz&id=$1 [L,QSA]
+RewriteRule ^cabinet/read/((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_zakaz&id=$1 [L,QSA]
+RewriteRule ^cabinet/add-file/((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_zakaz&id=$1&a2=file_add [L,QSA]
+RewriteRule ^cabinet/premoder/zakaz-((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_pre&id=$1 [L,QSA]
+RewriteRule ^cabinet/edit/zakaz-((.*)+).do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=edit_zakaz&id=$1&a2=edit&a3=do [L,QSA]
+RewriteRule ^cabinet/edit/zakaz-((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=edit_zakaz&id=$1&a2=edit [L,QSA]
+RewriteRule ^cabinet/comment.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=zakaz_comm [L,QSA]
+RewriteRule ^cabinet/pm.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/pm_send.php [L,QSA]
+RewriteRule ^cabinet/action.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=modal.do [L,QSA]
+RewriteRule ^cabinet/action.get?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=modal [L,QSA]
+RewriteRule ^cabinet/zakaz.write?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_new [L,QSA]
+RewriteRule ^cabinet/zakaz.add?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=zakaz_add_do [L,QSA]
+RewriteRule ^cabinet/cabinet/zakaz.update?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/zakaz_update_do.php [L,QSA]
+Redirect 301 /exit/ /exit
+RewriteRule ^exit/((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/do_logout.php [L,QSA]
+RewriteRule ^exit?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/do_logout.php [L,QSA]
+RewriteRule ^exit/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/do_logout.php [L,QSA]
+# END Cabinet
+
+
+# BEGIN GOVNO WORDPRESS
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+#RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+RewriteRule ^ups/((.*)+)$ /wp-content/cabinet/ups/$1 [L,QSA]
+RewriteRule ^ups/((.*)+)?$ /wp-content/cabinet/ups/$1  [L,QSA]
+
+RewriteRule ^cabinet/img/((.*)+)$ /wp-content/cabinet/cabinet/img/$1 [L,QSA]
+RewriteRule ^cabinet/img/((.*)+)?$ /wp-content/cabinet/cabinet/img/$1  [L,QSA]
+
+RewriteRule ^enter_do.php?$ /wp-content/cabinet/enter_do.php [L,QSA]
+RewriteRule ^give_me_price.php?$ /wp-content/cabinet/give_me_price.php [L,QSA]
+
+
+
+
+
+RewriteRule ^cabinet/assets/((.*)+)$ /wp-content/cabinet/cabinet/assets/$1 [L,QSA]
+RewriteRule ^cabinet/img/((.*)+)$ /wp-content/cabinet/img/$1 [L,QSA]
+RewriteRule ^cabinet/files/((.*)+)$ /wp-content/cabinet/cabinet/files/$1 [L,QSA]
+
+
+
+RewriteRule ^cabinet/?$ /wp-content/cabinet/index.php?a=main [L,QSA]
+RewriteRule ^cabinet/index.php?$ /wp-content/cabinet/index.php?a=main [L,QSA]
+
+RewriteRule ^cabinet/faq/?$ /wp-content/cabinet/index.php?a=faq [L,QSA]
+RewriteRule ^cabinet/faq/index.php?$ /wp-content/cabinet/index.php?a=faq [L,QSA]
+
+RewriteRule ^cabinet/examples/?$ /wp-content/cabinet/index.php?a=examples [L,QSA]
+RewriteRule ^cabinet/examples/index.php?$ /wp-content/cabinet/index.php?a=examples [L,QSA]
+
+RewriteRule ^cabinet/forgot-password/?$ wp-content/cabinet/index.php/?a=help_me [L,QSA]
+RewriteRule ^cabinet/forgot-password/index.php?$ wp-content/cabinet/index.php/?a=help_me [L,QSA]
+
+RewriteRule ^cabinet/profile.get?$ /wp-content/cabinet/cabinet/profile.php [L,QSA]
+RewriteRule ^cabinet/profile.do?$ /wp-content/cabinet/cabinet/profile.php?a=save [L,QSA]
+
+RewriteRule ^cabinet/pm/?$ /wp-content/cabinet/index.php?a=pm [L,QSA]
+RewriteRule ^cabinet/pm/index.php?$ /wp-content/cabinet/index.php?a=pm [L,QSA]
+
+RewriteRule ^cabinet/earn/?$ /wp-content/cabinet/index.php?a=friends [L,QSA]
+RewriteRule ^cabinet/earn/index.php?$ /wp-content/cabinet/index.php?a=friends [L,QSA]
+
+RewriteRule ^cabinet/discount/?$ /wp-content/cabinet/index.php?a=discount [L,QSA]
+RewriteRule ^cabinet/discount/index.php?$ /wp-content/cabinet/index.php?a=discount [L,QSA]
+
+
+
+RewriteRule ^cabinet/open/((.*[^/])+)[/.*]?$ /wp-content/cabinet/index.php?a=open_zakaz&id=$1 [L,QSA]
+RewriteRule ^cabinet/read/((.*)+)?$ /wp-content/cabinet/index.php?a=open_zakaz&id=$1 [L,QSA]
+RewriteRule ^cabinet/add-file/((.*)+)?$ /wp-content/cabinet/index.php?a=open_zakaz&id=$1&a2=file_add [L,QSA]
+
+RewriteRule ^cabinet/premoder/zakaz-((.*)+)?$ /wp-content/cabinet/index.php?a=open_pre&id=$1 [L,QSA]
+RewriteRule ^cabinet/edit/zakaz-((.*)+).do?$ /wp-content/cabinet/index.php?a=edit_zakaz&id=$1&a2=edit&a3=do [L,QSA]
+RewriteRule ^cabinet/edit/zakaz-((.*)+)?$ /wp-content/cabinet/index.php?a=edit_zakaz&id=$1&a2=edit [L,QSA]
+
+RewriteRule ^cabinet/comment.do?$ /wp-content/cabinet/cabinet/zakaz_comm.php [L,QSA]
+RewriteRule ^cabinet/action.do?$ /wp-content/cabinet/cabinet/modal.php [L,QSA]
+RewriteRule ^cabinet/pm.do?$ /wp-content/cabinet/cabinet/pm_send.php [L,QSA]
+RewriteRule ^cabinet/action.get?$ /wp-content/cabinet/cabinet/modal.php [L,QSA]
+RewriteRule ^cabinet/zakaz.write?$ /wp-content/cabinet/index.php?a=open_new [L,QSA]
+RewriteRule ^cabinet/zakaz.add?$ /wp-content/cabinet/cabinet/zakaz_add_do.php [L,QSA]
+RewriteRule ^cabinet/cabinet/zakaz.update?$ /wp-content/cabinet/zakaz_update_do.php [L,QSA]
+
+Redirect 301 /exit/ /exit
+
+RewriteRule ^exit/((.*)+)?$ /wp-content/cabinet/do_logout.php [L,QSA]
+RewriteRule ^exit?$ /wp-content/cabinet/do_logout.php [L,QSA]
+RewriteRule ^exit/index.php?$ /wp-content/cabinet/do_logout.php [L,QSA]
+
+RewriteRule ^cabinet/((.*)+)$ /wp-content/cabinet/cabinet/$1 [L,QSA]
+RewriteRule ^cabinet/((.*)+)?$ /wp-content/cabinet/cabinet/$1  [L,QSA]
+#END GOVNO WORDPRESS
+
+
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+RewriteRule . index.php [L]
+
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^cabinet/action/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=load&method=json&a2=$1 [QSA,L]
+RewriteRule ^cabinet/forgot-password/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/forgot-password/index.php [QSA,L]
+RewriteRule ^ups/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/ups/$1 [QSA,L]
+RewriteRule ^cabinet/assets/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/assets/$1 [QSA,L]
+RewriteRule ^cabinet/img/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/img/$1 [QSA,L]
+RewriteRule ^cabinet/files/((.*)+)$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/files/$1 [QSA,L]
+RewriteRule ^cabinet$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=main [QSA,L]
+RewriteRule ^cabinet/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=main [QSA,L]
+RewriteRule ^cabinet/profile.get?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=profile [QSA,L]
+RewriteRule ^cabinet/profile.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=profile&a2=save [QSA,L]
+RewriteRule ^cabinet/pm/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=pm [QSA,L]
+RewriteRule ^cabinet/pm/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=pm [QSA,L]
+RewriteRule ^cabinet/earn/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=friends [QSA,L]
+RewriteRule ^cabinet/earn/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=friends [QSA,L]
+RewriteRule ^cabinet/faq/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=faq [QSA,L]
+RewriteRule ^cabinet/faq/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=faq [QSA,L]
+RewriteRule ^cabinet/examples/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=examples [QSA,L]
+RewriteRule ^cabinet/examples/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=examples [QSA,L]
+RewriteRule ^cabinet/discount/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=discount [QSA,L]
+RewriteRule ^cabinet/discount/index.php?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=discount [QSA,L]
+RewriteRule ^cabinet/open/((.*[^/])+)[/.*]?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_zakaz&id=$1 [QSA,L]
+RewriteRule ^cabinet/read/((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_zakaz&id=$1 [QSA,L]
+RewriteRule ^cabinet/add-file/((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_zakaz&id=$1&a2=file_add [QSA,L]
+RewriteRule ^cabinet/premoder/zakaz-((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_pre&id=$1 [QSA,L]
+RewriteRule ^cabinet/edit/zakaz-((.*)+).do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=edit_zakaz&id=$1&a2=edit&a3=do [QSA,L]
+RewriteRule ^cabinet/edit/zakaz-((.*)+)?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=edit_zakaz&id=$1&a2=edit [QSA,L]
+RewriteRule ^cabinet/comment.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=zakaz_comm [QSA,L]
+RewriteRule ^cabinet/pm.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/cabinet/pm_send.php [QSA,L]
+RewriteRule ^cabinet/action.do?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=modal.do [QSA,L]
+RewriteRule ^cabinet/action.get?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=modal [QSA,L]
+RewriteRule ^cabinet/zakaz.write?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=open_new [QSA,L]
+RewriteRule ^cabinet/zakaz.add?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/index.php?a=zakaz_add_do [QSA,L]
+RewriteRule ^cabinet/cabinet/zakaz.update?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/zakaz_update_do.php [QSA,L]
+RewriteRule ^exit$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/do_logout.php [QSA,L]
+RewriteRule ^exit/?$ /wp-content/plugins/cabinet_partner_na5ku/cabinet/do_logout.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

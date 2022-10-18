@@ -1,0 +1,110 @@
+@import "inc/index";
+
+.mini-form {
+    input[type="text"],
+    input[type="email"],
+    select {
+        font-size: 18px;
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+        outline: none;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        border: 0;
+        border-bottom: 1px solid #cccccc;
+        height: 50px;
+        padding: 0;
+        background-color: #fff;
+        width: 100%;
+        text-indent: 20px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .form-group {
+        display: inline-block;
+        padding-right: 8px;
+        width: calc(100% / 3 - 10px);
+
+        @media only screen and (max-width: 1024px) {
+            width: 100% !important;
+            padding-bottom: 10px;
+        }
+    }
+
+    .jq-local-registration-result {
+        font-size: 18px;
+    }
+
+    .price-button {
+        background-color: var(--na5ku-buttons-bg);
+        height: 50px;
+        padding: 0;
+        width: 255px;
+        max-width: 100%;
+        font-size: 18px;
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+        border: none;
+        transition: all .5s ease;
+        color: #fff;
+        outline: none;
+        text-transform: uppercase;
+        -webkit-transition: all .5s ease;
+    }
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container--default {
+        .select2-selection--single {
+            background: #fff;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            border-radius: 3px;
+            height: 51px;
+            outline: none;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            background: url(../images/selectbox-arrow.png) no-repeat right 5px center;
+
+            &:hover, &:focus {
+                border-color: #b3b3b3;
+            }
+
+            .select2-selection__rendered {
+                height: 44px;
+                line-height: 1.4;
+                padding: 11px 40px 11px 15px;
+                font-size: 16px;
+                color: #444444;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                background: none;
+            }
+
+            .select2-selection__arrow {
+                display: none;
+            }
+        }
+
+        &.select2-container--open {
+            &.select2-container--below {
+                .select2-selection--single, .select2-selection--multiple {
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                }
+            }
+
+            .select2-selection--single .select2-selection__arrow b {
+                border-color: transparent transparent #b3b3b3 transparent;
+                border-width: 0 5px 5px 5px;
+            }
+        }
+    }
+}
+
+.select2-results__option {
+    font-size: 16px;
+}

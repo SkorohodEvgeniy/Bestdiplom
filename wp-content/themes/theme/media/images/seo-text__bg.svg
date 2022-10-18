@@ -1,0 +1,25 @@
+<svg width="1920" height="917" viewBox="0 0 1920 917" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="917" fill="white"/>
+<path d="M1920 916L1920 840.82L1920 702C1769.79 702 1780.65 778.882 1673.42 817.079C1590.94 846.461 1557.22 831.779 1453.77 852.69C1350.32 873.601 1363.55 916 1363.55 916L1920 916Z" fill="#F5F7FA"/>
+<g opacity="0.2">
+<circle cx="1685.5" cy="424.5" r="67" stroke="#00AE9A" stroke-width="5"/>
+<circle cx="1685.5" cy="424.5" r="55.295" stroke="#00AE9A" stroke-width="2"/>
+</g>
+<circle opacity="0.2" cx="180.5" cy="326.5" r="47.5" stroke="#00AE9A" stroke-width="2"/>
+<circle opacity="0.3" cx="1725.5" cy="754.5" r="47.5" stroke="#CAD51A" stroke-width="2"/>
+<circle opacity="0.3" cx="263.5" cy="808.5" r="47.5" stroke="#CAD51A" stroke-width="2"/>
+<rect x="300" y="158" width="19" height="5" fill="#EFF1CC"/>
+<rect x="312" y="151" width="19" height="5" transform="rotate(90 312 151)" fill="#EFF1CC"/>
+<rect x="205" y="509" width="19" height="5" fill="#EFF1CC"/>
+<rect x="217" y="502" width="19" height="5" transform="rotate(90 217 502)" fill="#EFF1CC"/>
+<rect x="1788" y="239" width="19" height="5" fill="#EFF1CC"/>
+<rect x="1800" y="232" width="19" height="5" transform="rotate(90 1800 232)" fill="#EFF1CC"/>
+<rect x="1156" y="105" width="19" height="5" fill="#EFF1CC"/>
+<rect x="1168" y="98" width="19" height="5" transform="rotate(90 1168 98)" fill="#EFF1CC"/>
+<rect x="127" y="128" width="19" height="5" fill="#00AE9A"/>
+<rect x="139" y="121" width="19" height="5" transform="rotate(90 139 121)" fill="#00AE9A"/>
+<rect x="1606" y="114" width="19" height="5" fill="#00AE9A"/>
+<rect x="1618" y="107" width="19" height="5" transform="rotate(90 1618 107)" fill="#00AE9A"/>
+<rect x="125" y="743" width="19" height="5" fill="#00AE9A"/>
+<rect x="137" y="736" width="19" height="5" transform="rotate(90 137 736)" fill="#00AE9A"/>
+</svg>

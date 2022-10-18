@@ -1,0 +1,114 @@
+.cabinet-examples {
+    background: #f9f9f9;
+    border: 1px solid var(--na5ku-main-color);
+    padding: 35px;
+
+    .row {
+        /*display: flex;*/
+        text-align: center;
+
+        @include respond-above(sm){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+    }
+
+    .file-col {
+        text-align: center;
+        justify-content: center;
+
+        @include respond-above(sm){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+    }
+
+
+    .file-link {
+        display: inline-block;
+        width: 100%;
+        max-width: 220px;
+        margin-bottom: 30px;
+
+        @include respond-above(sm){
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .file {
+        position: relative;
+        max-width: 220px;
+        height: 100%;
+        width: 100%;
+        /*padding-bottom: 30px;*/
+        text-align: left;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+
+        &:hover .file-desc {
+            background: var(--na5ku-main-color);
+        }
+    }
+
+    .file-desc {
+        height: 95px;
+        background: #ebeff2;
+        border-radius: 10px 10px 0 0;
+        display: grid;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .file-info {
+        background: #fff;
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+        width: 100%;
+        height: inherit;
+
+        .file-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: black;
+        }
+    }
+
+    .file-icon {
+        display: inline-block;
+
+        img {
+            width: 45px;
+            max-height: 65px;
+        }
+
+    }
+
+    .file-type {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        background: #ccd0d1;
+        font-weight: bold;
+        color: white;
+        font-size: 12px;
+        padding: 7px 15px 7px 15px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .file-download {
+        color: #c8c8c8;
+
+        .fa {
+            color: var(--na5ku-main-color);
+        }
+    }
+}
+

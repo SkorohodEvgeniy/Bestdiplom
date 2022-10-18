@@ -1,0 +1,906 @@
+@import "bourbon"
+@import "fonts"
+
+$green: #8faf40
+$orange: #ec9228
+$grey: #727272
+$font-regular: "RobotoRegular", sans-serif
+$font-light: "RobotoLight", sans-serif
+$font-medium: "RobotoMedium", sans-serif
+
+html
+	position: relative
+	min-height: 100%
+
+body
+	margin-bottom: 65px
+	font-size: 16px
+	line-height: 1.6
+	font-family: $font-regular
+	overflow-x: hidden
+	color: #000
+
+.hidden
+	display: none
+
+a
+	outline: none !important
+	&:hover, &:active, &:focus
+		text-decoration: none
+
+strong
+	font-weight: normal
+	font-family: $font-medium
+
+.button
+	background-color: $orange
+	font-family: $font-light
+	border-radius: 7px
+	width: auto
+	line-height: 32px
+	border: none
+	outline: none
+	padding: 0 15px
+	display: block
+	text-align: center
+	color: #fff
+	font-size: 16px
+	transition: all .5s ease
+	&:hover, &:active
+		background-color: $orange
+		color: #fff
+		opacity: .7
+	&:focus
+		background-color: $orange
+		color: #fff
+
+*::-webkit-input-placeholder
+	color: #b0b0b0
+	opacity: 1
+
+*:-moz-placeholder
+	color: #b0b0b0
+	opacity: 1
+
+*::-moz-placeholder
+	color: #b0b0b0
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #b0b0b0
+	opacity: 1
+
+
+
+
+// Header -----------------------------------------------
+#header
+	background-color: #f3f3f3
+	.main-menu
+		padding: 10px 0
+		position: relative
+		.logo
+			float: left
+
+		.right-side
+			float: right
+			.phones
+				display: inline-block
+				padding-left: 28px
+				background: url(../img/phone.png) no-repeat left center
+				margin-right: 25px
+				.phone
+					display: block
+					font-size: 18px
+					line-height: 1.4
+					color: #000
+					transition: all .5s ease
+					&:hover, &:active
+						color: $orange
+
+			.user
+				display: inline-block
+				padding-left: 28px
+				background: url(../img/user.png) no-repeat left center
+				vertical-align: top
+				margin-top: 12px
+				margin-right: 25px
+				.login
+					color: #000
+					font-family: $font-light
+					transition: all .5s ease
+					&:hover, &:active
+						color: $orange
+			.balance
+				display: inline-block
+				vertical-align: top
+				margin-top: 7px
+				margin-right: 15px
+				.money
+					font-size: 17px
+					color: #000
+					font-family: $font-light
+					display: inline-block
+					background-color: #dadada
+					float: left
+					height: 35px
+					line-height: 35px
+					padding: 0 10px
+					span
+						font-family: $font-medium
+				.bonus-select
+					display: inline-block
+					float: left
+					padding: 0 25px 0 10px
+					outline: none
+					border: none
+					background-color: #27436f
+					color: #fff
+					font-family: $font-medium
+					font-size: 17px
+					height: 35px
+					line-height: 35px
+					background-image: url(../img/select-arrow.png)
+					background-position: 95% 50% 
+					background-repeat: no-repeat
+					appearance: none
+					cursor: pointer
+			
+			.menu-button
+				display: inline-block
+				vertical-align: top
+				background-color: $orange
+				border-radius: 7px
+				width: auto
+				line-height: 28px
+				text-align: center
+				color: #fff
+				font-size: 16px
+				transition: all .5s ease
+				font-family: $font-light
+				padding: 0 12px
+				margin-top: 10px
+				&:hover, &:active
+					background-color: $orange
+					color: #fff
+					opacity: .7
+				&:focus
+					background-color: $orange
+					color: #fff
+			.options
+				margin-right: 10px
+			.logout
+				background-color: $grey
+				&:hover, &:active
+					background-color: $grey
+				&:focus
+					background-color: $grey
+
+// END:Header ---------------------------------------------------
+
+
+
+
+// Progress Bar -------------------------------------
+.progress
+	height: 44px
+	border-radius: 0
+	border: 1px solid #e3e3e3
+	box-shadow: none
+	background-size: 40px 40px
+	margin-bottom: 35px
+	background-image: linear-gradient(135deg,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)
+	.progress-bar-success
+		background-color: $orange
+		opacity: .7
+	.progress-bar
+		box-shadow: none
+	.progress-percent
+		color: $green
+		text-transform: uppercase
+		font-size: 18px
+		line-height: 44px
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+
+// END:Progress Bar ---------------------------------------------------
+
+
+
+
+// Main Content ------------------------------------------------
+#main
+	padding: 45px 0
+.main-content
+	background-color: #f3f3f3
+	padding: 20px
+
+// END:Main Content --------------------------------------------
+
+
+
+// Vertical Nav -------------------------------------
+#vertical-nav
+	margin-bottom: 40px
+	ul
+		padding-left: 0
+		list-style: none
+		margin-right: -10px
+		margin-left: -10px
+		li
+			display: inline-block
+			width: 20%
+			text-align: center
+			float: left
+			padding-right: 10px
+			padding-left: 10px
+			&.active a
+				background-color: #fff
+				color: $green
+			&.add-order a
+				color: #fff
+				background-color: $orange
+				border-color: $orange
+				&:hover
+					color: #fff
+					background-color: $orange
+					border-color: $orange
+					opacity: .7
+			a
+				background-color: $green
+				color: #fff
+				font-size: 17px
+				display: block
+				width: 100%
+				line-height: 1
+				height: 48px
+				position: relative
+				transition: all .5s ease
+				border-radius: 8px
+				border: 1px solid $green
+				text-transform: uppercase
+				&:hover
+					background-color: #fff
+					color: $green
+				span
+					position: relative
+					display: block
+					top: 50%
+					transform: translateY(-50%)
+				.checker
+					position: absolute
+					top: -10px
+					right: -10px
+					width: 28px
+					height: 28px
+					border-radius: 50%
+					border: 2px solid #fff
+					background-color: $orange
+					text-align: center
+					color: #fff
+					font-size: 18px
+					line-height: 24px
+					z-index: 10
+					font-family: $font-medium
+
+// END:Vertical Nav -----------------------------------------
+
+
+
+// Tabs -----------------------------------------------------
+.cabinet-tabs
+	.nav-tabs
+		border-color: $green
+	.nav-tabs
+		>li
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+			>a
+				border-radius: 8px 8px 0 0
+				background-color: rgba(143, 175, 64, .6)
+				color: #fff
+				text-transform: uppercase
+				font-size: 18px
+				padding: 12px 25px
+				transition: all .5s ease
+				position: relative
+				&:hover
+					background-color: rgba(143, 175, 64, 1)
+					border-color: $green
+				.checker
+					position: absolute
+					top: -10px
+					right: -10px
+					width: 28px
+					height: 28px
+					border-radius: 50%
+					border: 2px solid #fff
+					background-color: $orange
+					text-align: center
+					color: #fff
+					font-size: 18px
+					line-height: 24px
+					font-family: $font-medium
+					z-index: 10
+	.nav-tabs>li.active>a, 
+	.nav-tabs>li.active>a:focus, 
+	.nav-tabs>li.active>a:hover
+		border-color: $green
+		border-bottom-color: transparent
+		background-color: #fff
+		color: $green
+		text-decoration: underline
+
+	.tab-content
+		background-color: #fff
+		border: 1px solid $green
+		border-top: none
+		padding: 5px 25px 25px 25px
+
+// Back to Orders
+.back-to-orders
+	margin-bottom: 20px
+	a
+		font-size: 18px
+		color: #000
+		line-height: 1
+		position: relative
+		text-decoration: underline
+		transition: all .5s ease
+		
+		&:before
+			content: "< "
+		&:hover, &:active
+			text-decoration: none
+			color: $orange
+
+// Table title
+.info-title, .finances-title
+	float: left
+	h3
+		padding-left: 30px
+		margin: 0
+		line-height: 22px
+		background: url(../img/info.png) no-repeat left top
+		font-size: 18px
+.finances-title
+	h3
+		background: url(../img/money.png) no-repeat left top
+		line-height: 23px
+
+// Edit - Cancel Buttons
+.edit-cancel-buttons
+	float: right
+	.button
+		display: inline-block
+	.edit-button
+		margin-right: 5px
+	.cancel-button
+		background-color: $grey
+
+// Cabinet Table
+.table-wrap
+	padding: 20px
+	background-color: #f3f3f3
+	.cabinet-table
+		margin-bottom: 0
+		tbody
+			tr
+				background-color: #f3f3f3
+				td
+					padding-top: 16px
+					padding-bottom: 16px
+					padding-left: 5px
+					border: none
+					border-bottom: 1px solid #b4b4b4
+					line-height: 1
+					font-family: $font-light
+
+				td:last-child
+					font-family: $font-medium
+				&:last-child td
+					border: none
+
+// Pay Button
+.pay-button
+	line-height: 52px
+	padding: 0 40px
+	text-transform: uppercase
+	font-family: $font-medium
+	text-decoration: underline
+	margin-left: 20px
+
+// More info
+.more-info
+	p
+		line-height: 1.4
+		font-family: $font-light
+
+// Your files
+.files-wrap
+	padding: 25px 10px
+	
+.block-title
+	margin-bottom: 30px
+	h3
+		padding-left: 35px
+		margin: 0
+		line-height: 22px
+		background: url(../img/icon-folder.png) no-repeat left top
+		font-size: 18px
+
+.files-loaded
+	background-color: #f3f3f3
+	position: relative
+	padding: 15px 25px
+	.all-files
+		margin-bottom: 25px
+		.file
+			margin-bottom: 15px
+			.title
+				font-family: $font-light
+				display: inline-block
+				margin-right: 20px
+			.link
+				width: 29px
+				height: 25px
+				display: inline-block
+				background: url(../img/icon-upload.png) no-repeat center center
+	.files-loaded-info
+		p
+			line-height: 1.2
+.your-files
+	background-color: #f3f3f3
+	position: relative
+	padding: 15px
+	.your-files-table
+		tbody
+			tr
+				td
+					border: none
+					color: #aaaaaa
+					font-size: 16px
+					line-height: 33px
+					font-family: $font-medium
+					a
+						color: #3b98db
+						font-size: 16px
+						text-decoration: underline
+						font-family: $font-light
+						background: url(../img/icon-file.png) no-repeat left center
+						line-height: 33px
+						display: block
+						padding-left: 35px
+						&:hover
+							text-decoration: none
+	.form-group
+		margin-bottom: 0
+
+// Upload files
+.add-files
+	border: 2px dashed #aaa
+	height: 50px
+	background: url(../img/icon-add-file.png) no-repeat 8px center
+	padding-left: 35px
+	padding-top: 8px
+	width: 100%
+.fileupload-new, .fileupload-exists
+	font-size: 16px
+	font-family: $font-medium
+	color: #367bd1
+	text-decoration: underline
+	display: inline-block
+.fileupload-preview
+	text-decoration: none !important
+	color: #000
+	background-color: #fff
+	border: 1px solid #a1aeaf
+	padding: 0 20px
+	height: 28px
+	line-height: 26px
+	display: inline-block
+	font-family: $font-light
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	max-width: 200px
+.close
+	text-decoration: none
+	padding-right: 10px
+	padding-top: 3px
+
+.hide-text
+	font: 0/0 a
+	color: transparent
+	text-shadow: none
+	background-color: transparent
+	border: 0
+
+.input-block-level
+	display: block
+	width: 100%
+	min-height: 30px
+	box-sizing: border-box
+
+.btn-file
+	overflow: hidden
+	position: relative
+	vertical-align: top
+	> input
+		position: absolute
+		top: 0
+		right: 0
+		margin: 0
+		opacity: 0
+		filter: alpha(opacity = 0)
+		transform: translate(-300px, 0) scale(4)
+		font-size: 23px
+		direction: ltr
+		cursor: pointer
+
+.fileupload
+	.uneditable-input
+		display: inline-block
+		margin-bottom: 0px
+		vertical-align: top
+		cursor: text
+	.thumbnail
+		overflow: hidden
+		display: inline-block
+		margin-bottom: 5px
+		vertical-align: top
+		text-align: center
+		> img
+			display: inline-block
+			vertical-align: top
+			max-height: 100%
+	.btn
+		vertical-align: top
+		background: transition
+		border: none
+		color: #4977b1
+		font-size: 12px
+		box-shadow: none
+		padding: 0 0 0 15px
+		font-weight: normal
+		text-shadow: none
+		margin-right: 10px
+		margin-top: 4px
+		&:hover, &:active, &:focus
+			background-color: transparent
+			color: $orange
+
+	.close
+		float: right !important
+		color: #4977b1
+		font-size: 12px
+		text-shadow: none
+		opacity: 1
+		font-weight: normal
+		line-height: 2
+
+.fileupload-new .fileupload-preview
+	display: none
+.fileupload-exists .fileupload-preview
+	text-decoration: none !important
+	color: #000
+	background-color: #fff
+	border: 1px solid #a1aeaf
+	padding: 0 20px
+	height: 28px
+	line-height: 26px
+	display: inline-block
+	font-family: $font-light
+
+.fileupload-exists .fileupload-new, .fileupload-new .fileupload-exists
+	display: none
+
+.fileupload-inline .fileupload-controls
+	display: inline
+
+.fileupload-new .input-append .btn-file
+	border-radius: 0 3px 3px 0
+
+.thumbnail-borderless .thumbnail
+	border: none
+	padding: 0
+	border-radius: 0
+	box-shadow: none
+
+.fileupload-new.thumbnail-borderless .thumbnail
+	border: 1px solid #ddd
+
+.control-group
+	&.warning .fileupload
+		.uneditable-input
+			color: #a47e3c
+			border-color: #a47e3c
+		.fileupload-preview
+			color: #a47e3c
+		.thumbnail
+			border-color: #a47e3c
+	&.error .fileupload
+		.uneditable-input
+			color: #b94a48
+			border-color: #b94a48
+		.fileupload-preview
+			color: #b94a48
+		.thumbnail
+			border-color: #b94a48
+	&.success .fileupload
+		.uneditable-input
+			color: #468847
+			border-color: #468847
+		.fileupload-preview
+			color: #468847
+		.thumbnail
+			border-color: #468847
+
+// Messages Tab
+.messages-wrap
+	.message-item
+		padding: 20px 0 20px 20px
+		.col-10
+			width: 10%
+			float: left
+			padding-left: 15px
+			padding-right: 15px
+		.col-90
+			width: 90%
+			float: left
+			padding-left: 15px
+			padding-right: 15px
+		.message-info
+			margin-bottom: 15px
+			.name
+				font-size: 18px
+				color: #5b91ce
+				font-family: $font-medium
+				display: inline-block
+				line-height: 1
+			.time, .date
+				display: inline-block
+				font-size: 14px
+				font-family: $font-medium
+				color: #999999
+				margin-left: 15px
+				line-height: 1
+		.avatar
+			width: 62px
+			height: 62px
+			float: left
+			margin-right: 30px
+			img
+				width: auto
+				height: 100%
+		.text
+			p
+				text-indent: 10px
+				line-height: 1.2
+				text-align: justify
+				font-family: $font-light
+		.attached-files
+			margin-top: 30px
+			margin-bottom: 20px
+			a
+				color: #2582c3
+				text-decoration: underline
+				background: url(../img/attached-files.png) no-repeat left center
+				height: 27px
+				padding-left: 48px
+				display: inline-block
+				margin-right: 30px
+				&:hover
+					text-decoration: none
+	
+	.author-item
+		background-color: #f3f3f3
+		margin-right: -25px
+		margin-left: -25px
+		padding: 20px 25px 20px 20px
+		.avatar
+			float: right
+			margin-right: 0
+			margin-left: 30px
+		.name, .time, .date
+			float: right
+			margin-left: 15px
+			vertical-align: bottom
+			height: 18px
+		.time, .date
+			padding-top: 5px
+		.text p
+			text-align: right
+	
+	.add-message-form
+		.form-group
+			margin-bottom: 0
+		textarea
+			width: 100%
+			min-height: 110px
+			outline: none
+			padding: 5px 10px
+		.send-button
+			width: 100%
+			//max-width: 160px
+			margin-bottom: 15px
+			height: 44px
+			line-height: 44px
+			font-family: $font-regular
+
+// END:Tabs ------------------------------------------------
+
+
+
+
+// Active Orders Page --------------------------------------
+.active-orders
+	.tab-content
+		padding: 25px
+		.col-title
+			color: #000
+			font-size: 18px
+			line-height: 22px
+			margin-bottom: 15px
+			padding-left: 30px
+			background: url(../img/info.png) no-repeat top left
+		.col-title.status
+			background: url(../img/icon-status.png) no-repeat top left
+		.col-title.price
+			background: url(../img/money.png) no-repeat top left
+		.active-orders-item
+			border-bottom: 2px solid #b9b9b9
+			padding-bottom: 25px
+			margin-bottom: 45px
+			&:last-child
+				border: none
+				padding-bottom: 0
+				margin-bottom: 0
+			.title
+				color: #27436f
+				font-size: 22px
+				margin-bottom: 15px
+				line-height: 1
+			.pages
+				font-size: 18px
+				color: #000
+				margin-bottom: 15px
+			.deadline
+				font-size: 18px
+				color: #000
+				font-family: $font-light
+				margin-bottom: 15px
+				span
+					font-family: $font-regular
+			.order-id
+				color: #000
+				font-size: 18px
+			.prepayment
+				font-size: 18px
+				line-height: 1
+				color: #000
+				font-family: $font-light
+				padding-left: 30px
+				margin-bottom: 15px
+				margin-top: 10px
+				background: url(../img/icon-finance.png) no-repeat left center
+				&.paid
+					background-image: url(../img/check.png)
+			.money
+				color: #27436f
+				display: block
+				font-size: 30px
+			.comments
+				line-height: 1.2
+				a
+					color: #000
+					font-size: 18px
+					font-family: $font-light
+					background: url(../img/icon-email.png) no-repeat left center
+					padding-left: 30px
+					//height: 32px
+					display: block
+					text-decoration: underline
+					&:hover, &:active
+						text-decoration: none
+
+// END:Active Orders Page --------------------------------------
+
+
+
+
+// Footer --------------------------------------------
+#footer
+	position: absolute
+	bottom: 0
+	width: 100%
+	.footer-wrap
+		background-color: #f3f3f3
+		padding: 20px 0
+		.copyright
+			font-size: 22px
+			line-height: 1
+			text-align: center
+
+// END:Footer ----------------------------------------
+
+
+
+
+// Popup --------------------------------------------
+#popup
+	background-color: #fff
+	width: 100%
+	position: relative
+	max-width: 420px
+	padding: 20px 50px
+	margin: 0 auto
+	h3
+		text-transform: uppercase
+		font-size: 30px
+		text-align: center
+		border-bottom: 1px solid #f3f3f3
+		line-height: 1.4
+		padding-bottom: 10px
+		color: #27436f
+		margin: 0 0 30px
+	p
+		font-weight: normal
+		text-align: center
+		span
+			font-weight: bold
+	input[type="text"]
+		width: 100%
+		outline: none
+		border-radius: 3px
+		height: 40px
+		line-height: 40px
+		text-indent: 10px
+		border: 1px solid #555
+		font-size: 16px
+	.checkbox
+		margin-bottom: 30px
+		text-align: center
+		input
+			margin-left: 0
+			margin-top: 7px
+		label
+			cursor: pointer
+	.button
+		width: 100%
+		background-color: #8faf40
+		height: 48px
+		line-height: 48px
+		font-size: 20px
+
+
+// Magnific Popup effect
+.mfp-fade
+	&.mfp-bg
+		opacity: 0
+		transition: all .3s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all .3s ease-out
+			transform: scale(0.7)
+		&.mfp-ready .mfp-content
+			opacity: 1
+			transform: scale(1)
+		&.mfp-removing .mfp-content
+			opacity: 0
+			transform: scale(0.7)
+
+// END:Popup ----------------------------------------
+
+
+
+@import "vertical"
+@import "media"

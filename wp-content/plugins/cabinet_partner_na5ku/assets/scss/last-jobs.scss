@@ -1,0 +1,51 @@
+@import "inc/index";
+
+.na5ku-last-jobs-div {
+    font-size: 14px;
+    padding: 20px;
+
+    .last-works-desktop {
+        @include respond-below(sm) {
+            display: none;
+        }
+
+        .na5ku-last-jobs {
+            tbody tr td:nth-child(1),
+            thead tr th:nth-child(1) {
+                text-align: center;
+                width: 90px;
+            }
+
+            tbody tr td:nth-child(2),
+            thead tr th:nth-child(2) {
+                text-align: center;
+                width: 90px;
+            }
+
+            tbody tr td:nth-child(4),
+            thead tr th:nth-child(4) {
+                white-space: nowrap;
+                text-align: center;
+            }
+        }
+    }
+
+    .last-works-mobile {
+        @include respond-above(sm) {
+            display: none;
+        }
+
+        .na5ku-last-jobs-mobile {
+            .na5ku-job-item {
+                border: 1px solid gray;
+                margin-bottom: 15px;
+                padding: 5px;
+
+                .na5ku-name span {
+                    color: var(--na5ku-buttons-bg);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

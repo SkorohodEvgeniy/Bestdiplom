@@ -1,0 +1,204 @@
+/* line 1, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples {
+  background: #f9f9f9;
+  border: 1px solid var(--na5ku-main-color);
+  padding: 35px;
+}
+
+/* line 6, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .row {
+  /*display: flex;*/
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /* line 6, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+  .cabinet-examples .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+
+/* line 17, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-col {
+  text-align: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  /* line 17, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+  .cabinet-examples .file-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+
+/* line 29, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-link {
+  display: inline-block;
+  width: 100%;
+  max-width: 220px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  /* line 29, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+  .cabinet-examples .file-link {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 43, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file {
+  position: relative;
+  max-width: 220px;
+  height: 100%;
+  width: 100%;
+  /*padding-bottom: 30px;*/
+  text-align: left;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+/* line 54, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file:hover .file-desc {
+  background: var(--na5ku-main-color);
+}
+
+/* line 59, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-desc {
+  height: 95px;
+  background: #ebeff2;
+  border-radius: 10px 10px 0 0;
+  display: grid;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 70, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-info {
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  width: 100%;
+  height: inherit;
+}
+
+/* line 77, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-info .file-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+/* line 84, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-icon {
+  display: inline-block;
+}
+
+/* line 87, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-icon img {
+  width: 45px;
+  max-height: 65px;
+}
+
+/* line 94, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-type {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background: #ccd0d1;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 25px 0 0 25px;
+}
+
+/* line 106, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-download {
+  color: #c8c8c8;
+}
+
+/* line 109, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_examples.scss */
+.cabinet-examples .file-download .fa {
+  color: var(--na5ku-main-color);
+}
+
+/* line 2, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq {
+  border: 1px solid var(--na5ku-main-color);
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+/* line 8, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-heading {
+  padding: 15px 30px;
+}
+
+/* line 12, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-heading .collapsed .panel-title {
+  font-weight: normal;
+}
+
+/* line 17, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-heading .arrow {
+  color: var(--na5ku-main-color);
+  float: right;
+  padding-top: 5px;
+  transition: linear 0.2s;
+  transform: rotate(180deg);
+}
+
+/* line 25, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-heading .collapsed .arrow {
+  transform: rotate(0deg);
+}
+
+/* line 30, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq img {
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  width: 550px;
+}
+
+/* line 38, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* line 43, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-body {
+  border: 0 !important;
+}
+
+/* line 46, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-body a {
+  color: var(--na5ku-main-color);
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+/* line 51, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-body a:hover {
+  text-decoration: none;
+}
+
+/* line 57, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/pages/_faq.scss */
+.main-content .faq .panel-faq .panel-body {
+  border: 0 !important;
+}
+
+/*# sourceMappingURL=cabinet.css.map */

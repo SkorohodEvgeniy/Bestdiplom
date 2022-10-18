@@ -1,0 +1,55 @@
+/* line 3, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+.na5ku-last-jobs-div {
+  font-size: 14px;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  /* line 7, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+  .na5ku-last-jobs-div .last-works-desktop {
+    display: none;
+  }
+}
+
+/* line 13, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+.na5ku-last-jobs-div .last-works-desktop .na5ku-last-jobs tbody tr td:nth-child(1),
+.na5ku-last-jobs-div .last-works-desktop .na5ku-last-jobs thead tr th:nth-child(1) {
+  text-align: center;
+  width: 90px;
+}
+
+/* line 19, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+.na5ku-last-jobs-div .last-works-desktop .na5ku-last-jobs tbody tr td:nth-child(2),
+.na5ku-last-jobs-div .last-works-desktop .na5ku-last-jobs thead tr th:nth-child(2) {
+  text-align: center;
+  width: 90px;
+}
+
+/* line 25, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+.na5ku-last-jobs-div .last-works-desktop .na5ku-last-jobs tbody tr td:nth-child(4),
+.na5ku-last-jobs-div .last-works-desktop .na5ku-last-jobs thead tr th:nth-child(4) {
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /* line 33, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+  .na5ku-last-jobs-div .last-works-mobile {
+    display: none;
+  }
+}
+
+/* line 39, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+.na5ku-last-jobs-div .last-works-mobile .na5ku-last-jobs-mobile .na5ku-job-item {
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+/* line 44, G:/hosts/na5ku/wp/wp-content/plugins/cabinet_partner_na5ku/assets/scss/last-jobs.scss */
+.na5ku-last-jobs-div .last-works-mobile .na5ku-last-jobs-mobile .na5ku-job-item .na5ku-name span {
+  color: var(--na5ku-buttons-bg);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=last-jobs.css.map */
